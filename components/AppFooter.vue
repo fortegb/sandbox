@@ -4,7 +4,11 @@
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <!-- Logo e Slogan -->
         <div class="col-span-1 md:col-span-2">
-          <h3 class="text-2xl font-bold mb-2">ForteGB</h3>
+          <img 
+            src="/logo.png" 
+            alt="ForteGB Logo" 
+            class="h-12 w-auto mb-4"
+          />
           <p class="text-sm opacity-80 mb-4">
             Construindo sonhos e realizando vidas através de projetos imobiliários de qualidade. Sua nova casa está aqui.
           </p>

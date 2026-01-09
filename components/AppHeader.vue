@@ -1,49 +1,47 @@
 <template>
-  <header class="bg-base-100 shadow-md sticky top-0 z-50">
+  <header class="bg-primary-500 shadow-md sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-4">
       <div class="flex items-center justify-between">
         <NuxtLink to="/" class="flex items-center space-x-2">
           <img 
-            src="/Branding/V2/_Uso Rapido/Logo.png" 
+            src="/logo.png" 
             alt="ForteGB Logo" 
-            class="h-12 w-auto"
-            v-if="false"
+            class="h-16 w-auto"
           />
-          <span class="text-2xl font-bold text-primary-500">ForteGB</span>
         </NuxtLink>
         
         <div class="hidden md:flex items-center space-x-6">
           <NuxtLink 
             to="/" 
-            class="text-base-content hover:text-primary-500 transition-colors"
-            active-class="text-primary-500 font-semibold"
+            class="text-white hover:text-primary-100 transition-colors"
+            active-class="text-primary-100 font-semibold"
           >
             Início
           </NuxtLink>
           <NuxtLink 
             to="/portfolio" 
-            class="text-base-content hover:text-primary-500 transition-colors"
-            active-class="text-primary-500 font-semibold"
+            class="text-white hover:text-primary-100 transition-colors"
+            active-class="text-primary-100 font-semibold"
           >
             Portfólio
           </NuxtLink>
           <NuxtLink 
             to="/sobre" 
-            class="text-base-content hover:text-primary-500 transition-colors"
-            active-class="text-primary-500 font-semibold"
+            class="text-white hover:text-primary-100 transition-colors"
+            active-class="text-primary-100 font-semibold"
           >
             Sobre
           </NuxtLink>
           <NuxtLink 
             to="/blog" 
-            class="text-base-content hover:text-primary-500 transition-colors"
-            active-class="text-primary-500 font-semibold"
+            class="text-white hover:text-primary-100 transition-colors"
+            active-class="text-primary-100 font-semibold"
           >
             Blog
           </NuxtLink>
           <NuxtLink 
             to="/contato" 
-            class="btn-primary px-6 py-2 rounded-lg"
+            class="bg-white text-primary-500 px-6 py-2 rounded-lg hover:bg-primary-100 transition-colors"
           >
             Contato
           </NuxtLink>
@@ -52,7 +50,7 @@
         <!-- Mobile menu button -->
         <button 
           @click="mobileMenuOpen = !mobileMenuOpen"
-          class="md:hidden text-base-content"
+          class="md:hidden text-white"
           aria-label="Toggle menu"
         >
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -66,35 +64,35 @@
       <div v-if="mobileMenuOpen" class="md:hidden mt-4 space-y-2">
         <NuxtLink 
           to="/" 
-          class="block py-2 text-base-content hover:text-primary-500"
+          class="block py-2 text-white hover:text-primary-100"
           @click="mobileMenuOpen = false"
         >
           Início
         </NuxtLink>
         <NuxtLink 
           to="/portfolio" 
-          class="block py-2 text-base-content hover:text-primary-500"
+          class="block py-2 text-white hover:text-primary-100"
           @click="mobileMenuOpen = false"
         >
           Portfólio
         </NuxtLink>
         <NuxtLink 
           to="/sobre" 
-          class="block py-2 text-base-content hover:text-primary-500"
+          class="block py-2 text-white hover:text-primary-100"
           @click="mobileMenuOpen = false"
         >
           Sobre
         </NuxtLink>
         <NuxtLink 
           to="/blog" 
-          class="block py-2 text-base-content hover:text-primary-500"
+          class="block py-2 text-white hover:text-primary-100"
           @click="mobileMenuOpen = false"
         >
           Blog
         </NuxtLink>
         <NuxtLink 
           to="/contato" 
-          class="block py-2 btn-primary rounded-lg text-center"
+          class="block py-2 bg-white text-primary-500 rounded-lg text-center hover:bg-primary-100 transition-colors"
           @click="mobileMenuOpen = false"
         >
           Contato
