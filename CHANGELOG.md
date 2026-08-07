@@ -7,6 +7,17 @@
 
 ## Não versionado
 
+### 2026-08-07 — Casa Jacatiá: primeira casa real no portfólio ([#218](https://github.com/fortegb/platform/issues/218))
+
+**Exceção deliberada antes do CMS existir (Sanity, #45, Etapa 8).** Casa 03 (Q-21, nome comercial "Casa Jacatiá") está à venda agora, então seu conteúdo real — fotos, vídeos, descrição longa/curta e características já separadas em destaques vs. diferenciais de engenharia, produzidos e aprovados em sessão dedicada (`fortegb/casa-assets`) — entra em `mockHouses` como a única entrada não-fictícia das 7, com comentário no código explicando a exceção.
+
+- **Nova capacidade de exibição:** a página de detalhe ganhou suporte a `features` agrupadas (`grupo: 'destaque' | 'engenharia'`) — as 5 casas fictícias continuam com lista única, sem mudança visual.
+- **Toggle curto/detalhado:** `shortDescription`/`shortFeatures` como padrão da página, com modal para a versão longa completa (descrição com 6 seções + destaques + diferenciais de engenharia) — evita sobrecarregar a página com o conteúdo completo do dossiê.
+- **Casa Jacatiá em destaque:** primeira posição em `/home` e `/portfolio`; status `disponivel`; preço R$ 1.800.000; localização corrigida para Paulínia-SP.
+- **Planta baixa:** reaproveita os arquivos da Residência Vila Verde como placeholder — a planta renderizada real da Casa Jacatiá saiu cortada/quebrada visualmente.
+- **`useVideoEmbed.ts`:** regex corrigida para aceitar `youtube.com/shorts/{id}` (só cobria `watch?v=`/`youtu.be/`) — sem isso os dois vídeos da casa seriam descartados silenciosamente.
+- **Revisão extensa de copy** (várias rodadas): gramática, redundância entre descrição e lista de características, marca do boiler (Heliotek), endereço completo, nome do condomínio corrigido (Condomínio Terras da Estância).
+
 ### 2026-07-21 — Onboarding do corretor: autocadastro + D-072 ([#201](https://github.com/fortegb/platform/issues/201))
 
 **Quinta leaf de design do Passo 6, primeira da seção Corretor** (muda de persona: visitante/cliente → corretor). Base de jornada #189/D-062 (upload de contrato = aprovação; CPF obrigatório por D-068). Rotas `/login`, `/corretor/onboarding/*`, `/corretor/casas/[id]/contrato`.
