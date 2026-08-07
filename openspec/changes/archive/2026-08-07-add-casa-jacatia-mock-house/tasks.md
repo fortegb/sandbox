@@ -24,7 +24,7 @@
 
 ## 5. Verification
 
-- [ ] 5.1 Run dev server, view `/portfolio` — confirm Casa Jacatiá appears, status badge reads "Disponível" (**left for user's own browser** per established preference — not run by the agent)
-- [ ] 5.2 View `/portfolio/casa-jacatia` — confirm gallery order, both videos play, grouped features render as two sections (**left for user**)
+- [x] 5.1 Run dev server, view `/portfolio` — confirm Casa Jacatiá appears, status badge reads "Disponível" — confirmed by user in browser
+- [x] 5.2 View `/portfolio/casa-jacatia` — confirm gallery order, both videos play, grouped features render as two sections — confirmed by user in browser
 - [ ] 5.3 Confirm search/filter on `/portfolio` still works (uses `tagline`, unaffected by this change) (**left for user**)
 - [ ] 5.4 Confirm `/corretor/casas` list still renders correctly (uses `tagline`, unaffected) (**left for user**)
